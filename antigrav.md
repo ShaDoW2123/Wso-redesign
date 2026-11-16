@@ -173,3 +173,8 @@ All changes are maintained and mirrored across active workspace directories:
   - Implemented 13 modular components in `src/components/about/` conforming to `DESIGN.md`: uniform `• PILL —` eyebrow structure, single Midnight Navy `#000B33` headings (no two-tone splits), clinical blues `#4C6DA6` / `#2F4E82` / `#BFD7FF`, and soft lavender `#F2F7FF` surfaces.
   - Included interactive features: destination comparison tabs, 30 search-filterable expandable FAQs, step-by-step student journey tracker, and country dossiers.
   - Linked "About" in `Navbar.tsx` to `/about` and verified full Next.js production build (`npx next build` compiled with exit code 0).
+- **2026-11-16**: Elevated About Us Page with **GSAP** (`gsap.com`) & **ReactBits** (`reactbits.dev`) Component Architecture:
+  - Built core ReactBits UI primitives in `src/components/ui/`: `SpotlightCard.tsx` (pointer-reactive radial lighting with falloff), `TiltedCard.tsx` (3D perspective tilt with specular glare), `Magnet.tsx` (magnetic pull interaction for buttons/badges), `CountUp.tsx` (ScrollTrigger numeric counter), and `BorderGlow.tsx`.
+  - Upgraded all 13 About page sections with fluid GSAP ScrollTrigger timelines, staggered entrance reveals, and `clearProps: "all"` for instant hydration safety.
+  - Added Magic Bento grid layout to Platform capabilities (`AboutPlatform.tsx`), diagnostic spotlight audit cards (`AboutWhyExists.tsx`), interactive comparison stage (`AboutComparisons.tsx`), and dark spotlight anthem CTA with magnetic action buttons (`AboutFaqAnthem.tsx`).
+  - Synced and verified full production build on `wso-home-v1` (exit code 0) and pushed to GitHub `https://github.com/ShaDoW2123/Wso-redesign.git`.
