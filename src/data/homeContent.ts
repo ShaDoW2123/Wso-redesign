@@ -42,7 +42,7 @@ export const homeContent = {
     tagline: "Global Medical Education Advisory",
     links: [
       { label: "Home", href: "/" },
-      { label: "About", href: "#impact" },
+      { label: "About", href: "/about" },
       { label: "Universities", href: "#featured-universities" },
       { label: "FAQs", href: "#faqs" },
       { label: "Blogs", href: "#blog" },

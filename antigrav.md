@@ -115,13 +115,35 @@
 16. **Footer (`Footer.tsx`)**:
     - Clean regulatory notices, verified address blocks, and directory links.
 
+17. **Redesigned About Us Page (`/about` & `src/components/about/`)**:
+    - Complete modernization of the legacy `https://shadow2123.github.io/Wso-v3/about-us.html` page into Next.js App Router route (`src/app/about/page.tsx`).
+    - **100% Verbatim Content Preservation**: Every heading, body paragraph, number, checklist item, quote, and all 30 authentic FAQs extracted directly from raw HTML and stored in `src/data/aboutContent.ts` with zero additions, modifications, or omissions.
+    - **Strict Clinical Blues System (`DESIGN.md`)**:
+      - Eyebrow pill: `• TRACKED LABEL —` with `#4C6DA6` pulse dot and tracking line.
+      - Heading: Single Midnight Navy (`#000B33`) font color across every section — zero two-tone splits, zero foreign colors.
+      - Body typography: Clinical muted navy (`#6F7C86` / `#2F4E82`) on crisp white (`#FFFFFF`) and lavender surface (`#F2F7FF`) cards.
+    - **Modular Architecture (14 Component Modules in `src/components/about/`)**:
+      - `AboutHero.tsx`: Atmospheric celestial gradient hero, single solid Midnight Navy headline, dual pill buttons (`button-hero-white`, `button-soft-blue`), student portrait card, and glass-frosted 4-metric impact ribbon.
+      - `AboutPlatform.tsx`: Platform definition narrative + 8 interactive capability pills card.
+      - `AboutWhyExists.tsx`: 4 diagnostic trap cards + full-width 5th critical blindspot card ("Career and Licensing Uncertainty") with 3 student questions.
+      - `AboutMissionVision.tsx`: Institutional Mission & Vision 2-column cards.
+      - `AboutWhyChoose.tsx`: 5 value reasons grid + authentic student success quote banner.
+      - `AboutAgencyCompare.tsx`: Traditional Agencies vs We Study Abroad side-by-side audit matrix with red crosses vs green checks.
+      - `AboutProcess.tsx`: 3-Step Admission Process (Profile Evaluation, Application & SOP, Visa & Departure) with stage tags.
+      - `AboutFramework.tsx`: University Selection Framework with 5 quality evaluation pillars.
+      - `AboutComparisons.tsx`: Interactive head-to-head destination comparison tabs (Russia vs Georgia, China vs Uzbekistan, Kazakhstan vs Kyrgyzstan).
+      - `AboutJourney.tsx`: 8-Stage Student Journey step cards.
+      - `AboutCountryUniversities.tsx`: 6 Country dossiers (Russia, Georgia, Kazakhstan, China, Uzbekistan, Kyrgyzstan).
+      - `AboutComplianceFinance.tsx`: Financial expenses, scholarship avenues, 7 visa mandatory documents, and 4 NMC 2021 Gazette statutory pillars + NExT reality card.
+      - `AboutFaqAnthem.tsx`: 30 authentic FAQs with search filtering and 2-column disclosure accordion + Global Anthem CTA ("Your path extends across the entire globe").
+
 ---
 
 ## 4. Multi-Workspace Synchronization Protocol
 
-All changes are maintained and mirrored across both active workspace directories:
-1. `C:\Users\USER\Desktop\WSO redesign\WSO-redesign-v1\`
-2. `C:\Users\USER\Desktop\WSO-redesign-v1\`
+All changes are maintained and mirrored across active workspace directories:
+1. `c:\Users\USER\Desktop\WSO-home\` (Active Development & Scratch)
+2. `c:\Users\USER\Desktop\wso-home-v1\` (GitHub Repository linked to `https://github.com/ShaDoW2123/Wso-redesign.git`)
 
 ---
 
@@ -146,3 +168,8 @@ All changes are maintained and mirrored across both active workspace directories
 - **2026-11-16**: Redesigned `AdvisoryTerminal` ([AdvisoryTerminal.tsx](file:///c:/Users/USER/Desktop/WSO-home/src/components/AdvisoryTerminal.tsx)) according to the 2-column layout and strictly aligned with the `DESIGN.md` clinical blue palette:
   - Left column: `GLOBAL NETWORK` pill (white with `#4C6DA6` pulse dot and midnight navy text), bold heading with signature `#4C6DA6` accent on `MBBS Abroad`, clinical `#6F7C86` subtext, 4 circular flag destination cards (Russia, Uzbekistan, Kazakhstan, Kyrgyzstan) on `#EFEFEF` borders with `#BFD7FF` hover elevation, and rounded pill "Explore All Destinations →" button.
   - Right column: Clean white card container holding the evaluation form with untouched inputs, validation, and functionality, using Midnight Navy (`#000B33`) primary button with `#4C6DA6` hover and `#BFD7FF` send accent. Zero pink or neon foreign colors. All builds and checks verified with 0 errors.
+- **2026-11-16**: Redesigned About Us Page (`/about` route) from legacy `https://shadow2123.github.io/Wso-v3/about-us.html`:
+  - Preserved 100% verbatim copy across all 16 sections (zero text modified, added, or deleted) into `src/data/aboutContent.ts`.
+  - Implemented 13 modular components in `src/components/about/` conforming to `DESIGN.md`: uniform `• PILL —` eyebrow structure, single Midnight Navy `#000B33` headings (no two-tone splits), clinical blues `#4C6DA6` / `#2F4E82` / `#BFD7FF`, and soft lavender `#F2F7FF` surfaces.
+  - Included interactive features: destination comparison tabs, 30 search-filterable expandable FAQs, step-by-step student journey tracker, and country dossiers.
+  - Linked "About" in `Navbar.tsx` to `/about` and verified full Next.js production build (`npx next build` compiled with exit code 0).
