@@ -10,8 +10,9 @@ interface WsoMedicalGlobeSceneProps {
 
 export default function WsoMedicalGlobeScene({
   progress = 0,
-  activeStep = 0,
+  activeStep: _activeStep = 0,
 }: WsoMedicalGlobeSceneProps) {
+  void _activeStep;
   const mountRef = useRef<HTMLDivElement>(null);
   const sceneRef = useRef<THREE.Scene | null>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
