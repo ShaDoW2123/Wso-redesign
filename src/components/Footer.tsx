@@ -61,6 +61,14 @@ export default function Footer() {
                     Student FAQs
                   </Link>
                 </li>
+                <li>
+                  <Link 
+                    href="/contact" 
+                    className="inline-flex items-center text-sm text-white/95 hover:text-[#FFE5D9] hover:translate-x-1 transition-all duration-200 font-normal"
+                  >
+                    Contact Advisory Desk
+                  </Link>
+                </li>
               </ul>
 
               {/* Col 2: Study Destinations */}

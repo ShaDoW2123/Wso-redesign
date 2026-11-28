@@ -802,7 +802,7 @@ export const homeContent = {
     contactInfo: {
       phone: "+91 98765 43210",
       email: "admissions@westudyoverseas.com",
-      address: "Connaught Place, New Delhi, India",
+      address: "Bhubaneswar, Odisha, India",
     },
     copyright: "© 2026 We Study Overseas. All rights reserved.",
     disclaimer:

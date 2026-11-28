@@ -7,6 +7,22 @@
   --foreground: #000b33;
 }
 
+html {
+  font-size: 100%;
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 108%;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 112%;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

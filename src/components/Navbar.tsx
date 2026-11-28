@@ -101,7 +101,7 @@ export default function Navbar() {
         {/* Right Actions: Contact + APPLY NOW */}
         <div className="hidden sm:flex items-center gap-3 xl:gap-4">
           <Link
-            href="#counselling"
+            href="/contact"
             className="px-4 py-2 text-xs xl:text-sm font-medium text-docshield-ink hover:text-docshield-primary transition-colors"
           >
             {nav.contactText}
@@ -186,7 +186,7 @@ export default function Navbar() {
 
           <div className="pt-4 border-t border-docshield-border flex flex-col gap-2.5">
             <Link
-              href="#counselling"
+              href="/contact"
               onClick={() => setMobileMenuOpen(false)}
               className="w-full text-center py-2.5 text-sm font-medium text-docshield-ink bg-docshield-lavender hover:bg-docshield-primary-light rounded-full transition-colors"
             >

@@ -173,8 +173,22 @@ All changes are maintained and mirrored across active workspace directories:
   - Implemented 13 modular components in `src/components/about/` conforming to `DESIGN.md`: uniform `• PILL —` eyebrow structure, single Midnight Navy `#000B33` headings (no two-tone splits), clinical blues `#4C6DA6` / `#2F4E82` / `#BFD7FF`, and soft lavender `#F2F7FF` surfaces.
   - Included interactive features: destination comparison tabs, 30 search-filterable expandable FAQs, step-by-step student journey tracker, and country dossiers.
   - Linked "About" in `Navbar.tsx` to `/about` and verified full Next.js production build (`npx next build` compiled with exit code 0).
-- **2026-11-16**: Elevated About Us Page with **GSAP** (`gsap.com`) & **ReactBits** (`reactbits.dev`) Component Architecture:
-  - Built core ReactBits UI primitives in `src/components/ui/`: `SpotlightCard.tsx` (pointer-reactive radial lighting with falloff), `TiltedCard.tsx` (3D perspective tilt with specular glare), `Magnet.tsx` (magnetic pull interaction for buttons/badges), `CountUp.tsx` (ScrollTrigger numeric counter), and `BorderGlow.tsx`.
-  - Upgraded all 13 About page sections with fluid GSAP ScrollTrigger timelines, staggered entrance reveals, and `clearProps: "all"` for instant hydration safety.
-  - Added Magic Bento grid layout to Platform capabilities (`AboutPlatform.tsx`), diagnostic spotlight audit cards (`AboutWhyExists.tsx`), interactive comparison stage (`AboutComparisons.tsx`), and dark spotlight anthem CTA with magnetic action buttons (`AboutFaqAnthem.tsx`).
-  - Synced and verified full production build on `wso-home-v1` (exit code 0) and pushed to GitHub `https://github.com/ShaDoW2123/Wso-redesign.git`.
+- **2026-11-24**: Built and launched comprehensive **MBBS in China** destination page (`/china` & `/universities/china` routes) with 100% exact copy fidelity from writer source document:
+  - Structured 25 sections in `src/data/chinaContent.ts` and 10 modular components in `src/components/china/`.
+  - Added Interactive 6-Year Budget Estimator Slider (₹18L to ₹40L) dynamically calculating tuition, hostel, food, and visa expenses.
+  - Implemented Top 8 MOE Medical Universities ledger with city filter rail (Beijing, Shanghai, Hangzhou, Wuhan, Guangzhou, Chengdu) and dual Cards / Table view switcher.
+  - Added 4-tab interactive switcher for Eligibility, 7-Step Admission Process, Required Documents, and 10-Step Journey.
+  - Added live search-filterable FAQ accordion with all 33 official queries verbatim.
+  - Integrated China dropdown menu under "Universities" in `Navbar.tsx` with mobile drawer support.
+- **2026-11-28**: Built dedicated clinical **Contact Us** page (`/contact` route) in `src/app/contact/page.tsx` adhering strictly to `DESIGN.md` single-color Midnight Navy (`#000B33`) and Docshield clinical blue system:
+  - Structured `src/data/contactContent.ts` with authentic contact coordinates (+91 98765 43210, admissions@westudyoverseas.com, Connaught Place New Delhi HQ).
+  - Implemented 7 modular components in `src/components/contact/`:
+    - `ContactHero.tsx`: Atmospheric celestial gradient hero, live availability indicator (10 AM - 7 PM IST), and trust badges.
+    - `ContactChannels.tsx`: 4 spotlight communication channels (Phone, WhatsApp, Email, Welfare) + 4 Regional Counseling Centers (New Delhi HQ, Mumbai BKC, Bengaluru Koramangala, Kolkata Park Street).
+    - `ContactFormTerminal.tsx`: 2-column interactive stage with reassurance markers and comprehensive 1-on-1 profile evaluation booking form with instant confirmation feedback.
+    - `ContactDepartments.tsx`: 4 specialized desks (Admissions, Education Loan, MEA Apostille & Visa, Student Welfare & Indian Mess).
+    - `ContactMapLocator.tsx`: Headquarters visitor guide, Metro Blue Line gate advisory, parking details, and Google Maps integration.
+    - `ContactFaqs.tsx`: Searchable counseling & visit FAQ accordion.
+    - `ContactEmergencyBanner.tsx`: 24/7 crisis support hotline for Indian students enrolled abroad.
+  - Updated "Contact Us" links in `Navbar.tsx` and `Footer.tsx` pointing directly to `/contact`.
+  - Synced to `wso-home-v1` and verified production build with 11/11 static pages generated.
